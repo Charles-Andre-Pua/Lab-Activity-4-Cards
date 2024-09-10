@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.title-logo {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: white;
+    overflow: hidden;
+}
+
+.pokemon-container {
+    margin: 13.5rem 3.5rem 4rem 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    border: .45rem solid gold;
+    height: 330px;
+    width: 240px;
+    padding: 16px;
+}
+
+.card-holder {
+    padding: 16px;
+    margin-top: 2px;
+    border: .25rem solid gold;
+    border-radius: 4px;
+}
+
+.card-holder img {
+    width: 100%;
+}
+
+li {
+    margin: 5px;
+}
+
+.pokemon-id {
+    margin-top: 8px;
+    font-weight: 550;
+    margin-bottom: -4px;
+}
+
+.pokemon-name {
+    margin-bottom: 14px;
+    font-weight: 800;
+}
+
+li span {
+    margin: 3px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    font-weight: 550;
+    border: 0.1px outset black;
+}
+
+.card:hover {
+    transform: scale(1.08) translateY(-40px);
+    transition: 1s;
+}
+
+.type-ghost {
+    background-color: #705898;
+}
+
+.card:hover:has(.type-ground) img {
+    filter: drop-shadow(0 0 10px brown) drop-shadow(0 0 5px #5f4f20);
+}
+
+.card-holder.type-ground {
+    background: radial-gradient(circle, #ec9b59 24%, #ce7647);
+}
+
+.card:has(.type-ground) {
+    background: radial-gradient(circle, #f1b682 53%, #ec9c47);
+}
+
+.type-ground {
+    background-color: #E2C56E;
+}
+
+.card:hover:has(.type-poison) img {
+    filter: drop-shadow(0 0 10px #A040A0) drop-shadow(0 0 5px rgb(61, 61, 61));
+}
+
+.card-holder.type-poison {
+    background: radial-gradient(circle, #AF74B1 24%, #7A4FA0);
+}
+
+.card:has(.type-poison) {
+    background: radial-gradient(circle, #C6ABD2 53%, #8555A1);
+}
+
+.type-poison {
+    background-color: #A040A0;
+}
+
+.card:hover:has(.type-water) img {
+    filter: drop-shadow(0 0 10px rgb(122, 204, 255)) drop-shadow(0 0 5px rgb(0, 0, 119));
+}
+
+.card-holder.type-water {
+    background: radial-gradient(circle, #92bbee 34%, #36a0d1);
+}
+
+.card:has(.type-water) {
+    background: radial-gradient(circle, #bbdff3 53%, #3098cc);
+}
+
+.type-water {
+    background-color: #9AA8FF;
+}
+
+.card:hover:has(.type-psychic) img {
+    filter: drop-shadow(0 0 10px #F85888) drop-shadow(0 0 5px rgb(61, 61, 61));
+}
+
+.card-holder.type-psychic {
+    background: radial-gradient(circle, #E8B5C2 24%, #803583);
+}
+
+.card:has(.type-psychic) {
+    background: radial-gradient(circle, #f1d8df 53%, #9c669e);
+}
+
+.type-psychic {
+    background-color: #F85888;
+}
+
+.card:hover:has(.type-grass) img {
+    filter: drop-shadow(0 0 10px #8BD46E) drop-shadow(0 0 5px rgb(16, 83, 27));
+}
+
+.card-holder.type-grass {
+    background: radial-gradient(circle, #B7D64D 24%, #7CB351);
+}
+
+.card:has(.type-grass) {
+    background: radial-gradient(circle, #D5E381 53%, #9AC34E);
+}
+
+.type-grass {
+    background-color: #8BD46E;
+}
+
+.card:hover:has(.type-fire) img {
+    filter: drop-shadow(0 0 10px #FF6043) drop-shadow(0 0 5px rgb(129, 14, 14));
+}
+
+.card-holder.type-fire {
+    background: radial-gradient(circle, #fdb74d 24%, #f55f3d);
+}
+
+.card:has(.type-fire) {
+    background: radial-gradient(circle, #fcc089 53%, #eb4c30);
+}
+
+.type-fire {
+    background-color: #FF6043;
+}
+
+.card:hover:has(.type-fairy) img {
+    filter: drop-shadow(0 0 10px #F9CCD3) drop-shadow(0 0 5px rgb(167, 145, 148));
+}
+
+.card-holder.type-fairy {
+    background: radial-gradient(circle, #F376B0 24%, #c75c8e);
+}
+
+.card:has(.type-fairy) {
+    background: radial-gradient(circle, #f39bc4 53%, #df4a90);
+}
+
+.type-fairy {
+    background-color: #F9CCD3;
+}
+
+.card:hover:has(.type-normal) img {
+    filter: drop-shadow(0 0 10px dimgray) drop-shadow(0 0 5px rgb(231, 231, 231));
+}
+
+.card-holder.type-normal {
+    background: radial-gradient(circle, #ffffff 24%, lightgray);
+}
+
+.card:has(.type-normal) {
+    background: radial-gradient(circle, #f8f8f8 53%, #cecece);
+}
+
+.type-normal {
+    background-color: silver;
+}
+
+.card:hover:has(.type-dragon) img {
+    filter: drop-shadow(0 0 10px #fccf3d) drop-shadow(0 0 5px #f8c20f);
+}
+
+.card-holder.type-dragon {
+    background: radial-gradient(circle, #dfa126 24%, #af9e06);
+}
+
+.card:has(.type-dragon) {
+    background: radial-gradient(circle, #C99B3E 53%, #B2B145);
+}
+
+.type-dragon {
+    background-color: #8B7DF1;
+}
+
+.card:hover:has(.type-electric) img {
+    filter: drop-shadow(0 0 10px rgb(255, 208, 0)) drop-shadow(0 0 5px rgb(255, 187, 0));
+}
+
+.card-holder.type-electric {
+    background: radial-gradient(circle, #fffd80 24%, #fdd349);
+}
+
+.card:has(.type-electric) {
+    background: radial-gradient(circle, rgb(255, 255, 132) 53%, #ffd95b);
+}
+
+.type-electric {
+    background-color:yellow;
+}
+
+.type-flying {
+background-color: #A890F0;
+}
