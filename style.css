@@ -17,23 +17,27 @@
     top: 0;
     background: white;
     overflow: hidden;
+    box-shadow: 0px 0px 5px 0.5px black;
+
 }
 
 .pokemon-container {
-    margin: 13.5rem 3.5rem 4rem 3.5rem;
+    margin: 13.5rem 5.5rem 4rem 5.5rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 75px 30px;
+    gap: 75px 60px;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .card {
     border-radius: 10px;
-    border: .45rem solid gold;
+    border: rgba(75, 75, 75, 0.466) solid .5px;
     height: 330px;
     width: 240px;
+    transition: .5s;
     padding: 16px;
+    outline: .45rem solid gold; 
 }
 
 .card-holder {
@@ -52,7 +56,7 @@ li {
 }
 
 .pokemon-id {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: 550;
     margin-bottom: -4px;
 }
@@ -74,7 +78,7 @@ li span {
 
 .card:hover {
     transform: scale(1.08) translateY(-40px);
-    transition: 1s;
+    transition: .8s;
 }
 
 .type-ghost {
@@ -238,13 +242,17 @@ li span {
 }
 
 .type-electric {
-    background-color:yellow;
+    background-color: yellow;
 }
 
 .type-flying {
-background-color: #A890F0;
+    background-color: #A890F0;
 }
 
 .type-fighting {
     background-color: #C56E60;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 3px black;
 }
